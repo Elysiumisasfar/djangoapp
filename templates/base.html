@@ -1,0 +1,26 @@
+{% load static %}
+<html>
+<head>
+<title>Hay Yoo</title>
+<link href="{% static 'css/base.css' %}" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="nav-left">
+    <h1><a href="{% url 'home' %}">hay Yoo </a></h1>
+    </div>
+    
+<div class="nav-right">
+<a href="{% url 'post_new' %}">+ New Blog Post</a>
+</div>
+</header>
+<div class="content">
+{% block content %}
+{% endblock content %}
+
+</div>
+</body>
+</html>
+
+
+</html>
